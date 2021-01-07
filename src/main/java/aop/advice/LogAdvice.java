@@ -23,5 +23,4 @@ public class LogAdvice {
     public void logAdvice(){
         System.out.println("get请求的advice触发了");
     }
-
 }
