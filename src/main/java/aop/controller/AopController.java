@@ -1,6 +1,7 @@
 package aop.controller;
 
 import aop.annotation.PermissionAnnotation;
+import aop.project1.Seven;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -26,7 +27,7 @@ public class AopController {
 
     @PostMapping("/permission")
     @PermissionAnnotation()
-    public JSONObject getGroupList(@RequestBody JSONObject request){
+    public JSONObject getGroupList( @RequestBody JSONObject request){
         return JSON.parseObject("{\"message\":\"SUCCESS\",\"code\":200}");
     }
 }

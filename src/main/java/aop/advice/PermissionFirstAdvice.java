@@ -23,6 +23,7 @@ public class PermissionFirstAdvice {
     //定义一个切面，括号内为自定义注解路径
     @Pointcut("@annotation(aop.annotation.PermissionAnnotation)")
     private void permissionCheck() {
+        System.out.println("11111111111");
     }
 
     @Around("permissionCheck()")
